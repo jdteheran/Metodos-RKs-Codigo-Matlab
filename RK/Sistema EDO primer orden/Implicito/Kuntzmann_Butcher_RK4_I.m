@@ -1,5 +1,5 @@
 function [x,y] = Kuntzmann_Butcher_RK4_I(a,b,n,x0,y0)
-%EJEMPLO: [x,y] = Kuntzmann_Butcher_RK4_I(0.01,1/2,20,0.0099999166667361106977490148082,0.000110517092175955069979947);
+%EJEMPLO: [x,y] = Kuntzmann_Butcher_RK4_I(0.01,1/2,100,0.0099999166667361106977490148082,0.0001105170921759550699799478876);
 
 syms kx1 kx2 kx3 kx4 ky1 ky2 ky3 ky4;
 format long;
@@ -34,7 +34,7 @@ for i = 1:n-1
          f(t(i,1) + ((1/2)+W2)*h, x(i,1) + (W1+W5)*h*kx1 + (W1P+W3+W4P)*h*kx2 + (W1P+W3-W4P)*h*kx3 + (W1)*h*kx4, y(i,1) + (W1+W5)*h*ky1 + (W1P+W3+W4P)*h*ky2 + (W1P+W3-W4P)*h*ky3 + (W1)*h*ky4) - kx4 ;
          g(t(i,1) + ((1/2)+W2)*h, x(i,1) + (W1+W5)*h*kx1 + (W1P+W3+W4P)*h*kx2 + (W1P+W3-W4P)*h*kx3 + (W1)*h*kx4, y(i,1) + (W1+W5)*h*ky1 + (W1P+W3+W4P)*h*ky2 + (W1P+W3-W4P)*h*ky3 + (W1)*h*ky4) - ky4];
      
-    K = Newton_Raphson_Multivariable(F, [KX1;KX2;KX3;KX4;KY1;KY2;KY3;KY4], 10^-8);
+    K = Newton_Raphson_Multivariable(F, [KX1;KX2;KX3;KX4;KY1;KY2;KY3;KY4], 10^-12);
     
     KX1 = K(1,1);
     KX2 = K(2,1);
