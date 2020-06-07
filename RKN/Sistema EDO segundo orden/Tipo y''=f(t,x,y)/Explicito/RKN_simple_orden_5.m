@@ -1,5 +1,5 @@
 function [x,y,xprima,yprima] = RKN_simple_orden_5(a,b,n,x0,y0,xprima0,yprima0)
-%EJEMPLO: [x,y,xprima,yprima] = RKN_simple_orden_5(0,2.5,100,0,1,0,0);
+%EJEMPLO: [x,y,xprima,yprima] = RKN_simple_orden_5(0,2.5,200,0,1,0,0);
 
 format long;
 
@@ -33,7 +33,8 @@ for i = 1:n-1
     xprima(i+1,1) = xprima(i,1) + h*((14/336)*KX1 + (125/336)*KX2 + (162/336)*KX3 + (35/336)*KX4);
     yprima(i+1,1) = yprima(i,1) + h*((14/336)*KY1 + (125/336)*KY2 + (162/336)*KY3 + (35/336)*KY4);
 t(n,1) = a + n*h;
-plot(t,x,t,y);
+%plot(t,x,t,y);
 %plot(t,xprima,t,yprima);
+plot(x,xprima,y,yprima);
 grid;
 end

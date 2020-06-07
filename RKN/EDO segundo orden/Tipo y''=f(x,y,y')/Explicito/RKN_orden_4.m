@@ -1,5 +1,5 @@
 function [y yprima] = RKN_orden_4(a,b,n,y0,yprima0)
-%EJEMPLO: RKN_orden_4();
+%EJEMPLO: [y yprima] = RKN_orden_4(0,25,200,1,1);
 
 format long;
 
@@ -24,7 +24,8 @@ for i = 1:n-1
     yprima(i+1,1) = yprima(i,1) + h*((1/6)*K1 + (2/6)*K2 + (2/6)*K3 + (1/6)*K4);
 end
 x(n,1) = a + n*h;
-plot(x,y);
+%plot(x,y);
 %plot(x,yprima);
+plot(y,yprima);
 grid;
 end

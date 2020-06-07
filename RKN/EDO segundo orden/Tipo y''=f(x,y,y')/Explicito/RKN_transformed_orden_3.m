@@ -1,5 +1,5 @@
 function [y yprima] = RKN_transformed_orden_3(a,b,n,y0,yprima0)
-%EJEMPLO: RKN_transformed_orden_3();
+%EJEMPLO: [y yprima] = RKN_transformed_orden_3(0,25,200,1,1);
 
 format long;
 
@@ -22,7 +22,8 @@ for i = 1:n-1
     yprima(i+1,1) = yprima(i,1) + h*((2/9)*K1 + (1/3)*K2 + (4/9)*K3);
 end
 x(n,1) = a + n*h;
-plot(x,y);
+%plot(x,y);
 %plot(x,yprima);
+plot(y,yprima);
 grid;
 end

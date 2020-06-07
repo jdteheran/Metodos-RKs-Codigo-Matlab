@@ -1,5 +1,5 @@
 function [y yprima] = RKN_simple_DOPRI5_4_7_FM(a,b,n,y0,yprima0)
-%EJEMPLO: RKN_simple_orden_();
+%EJEMPLO: [y yprima] = RKN_simple_DOPRI5_4_7_FM(0,10,200,0,1);
 
 format long;
 
@@ -30,7 +30,8 @@ for i = 1:n-1
     yprima(i+1,1) = yprima(i,1) + h*((5179/57600)*K1 + (7571/16695)*K3 + (393/640)*K4 - (92097/339200)*K5 + (187/2100)*K6 + (1/40)*K7);
 end
 x(n,1) = a + n*h;
-plot(x,y);
+%plot(x,y);
 %plot(x,yprima);
+plot(y,yprima);
 grid;
 end
