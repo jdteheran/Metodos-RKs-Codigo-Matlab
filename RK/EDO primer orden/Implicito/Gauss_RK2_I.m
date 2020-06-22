@@ -18,6 +18,9 @@ for i = 1:n-1
     F = [f(x(i,1) + ((3-sqrt(3))/6)*h, y(i,1) + (1/4)*h*k1 + ((3-2*sqrt(3))/12)*h*k2) - k1 ;
          f(x(i,1) + ((3+sqrt(3))/6)*h, y(i,1) + ((3+2*sqrt(3))/12)*h*k1 + (1/4)*h*k2) - k2];
     K = Newton_Raphson_Multivariable(F, [K1;K2], 10^-8);
+    
+    %TENER EN CUENTA COMO EL ALGORITMO DE NEWTON_RAPHSON TE DEVUELVE LAS
+    %VARIABLES
     K1 = K(1,1);
     K2 = K(2,1);
     

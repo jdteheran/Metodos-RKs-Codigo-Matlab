@@ -27,6 +27,8 @@ for i = 1:n-1
      
     K = Newton_Raphson_Multivariable(F, [KX1;KX2;KX3;KY1;KY2;KY3], 10^-8);
     
+    %TENER EN CUENTA COMO EL ALGORITMO DE NEWTON_RAPHSON TE DEVUELVE LAS
+    %VARIABLES
     KX1 = K(1,1);
     KX2 = K(2,1);
     KX3 = K(3,1);

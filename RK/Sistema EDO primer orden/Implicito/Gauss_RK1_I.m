@@ -19,6 +19,9 @@ for i = 1:n-1
     F = [f(t(i,1) + (1/2)*h, x(i,1) + (1/2)*h*kx1, y(i,1) + (1/2)*h*ky1) - kx1 ;
          g(t(i,1) + (1/2)*h, x(i,1) + (1/2)*h*kx1, y(i,1) + (1/2)*h*ky1) - ky1];
     K = Newton_Raphson_Multivariable(F, [KX1;KY1], 10^-8);
+    
+    %TENER EN CUENTA COMO EL ALGORITMO DE NEWTON_RAPHSON TE DEVUELVE LAS
+    %VARIABLES
     KX1 = K(1,1);
     KY1 = K(2,1);    
     

@@ -1,5 +1,5 @@
 function [y yprima] = RKN_implicito_orden_8(a,b,n,y0,yprima0)
-%EJEMPLO: [y yprima] = RKN_implicito_orden_8(0,25,200,1,1);
+%EJEMPLO: [y yprima] = RKN_implicito_orden_8(0,10,200,0,1);
 
 syms kp1 kp2 kp3 kp4;
 format long;
@@ -47,6 +47,9 @@ for i = 1:n-1
          f(x(i,1) + C3*h, y(i,1) + C3*h*yprima(i,1) + h^2*(AR31*kp1 + AR32*kp2 + AR33*kp3 + AR34*kp4), yprima(i,1) + h*(A31*kp1 + A32*kp2 + A33*kp3 + A34*kp4)) - kp3;
          f(x(i,1) + C4*h, y(i,1) + C4*h*yprima(i,1) + h^2*(AR41*kp1 + AR42*kp2 + AR43*kp3 + AR44*kp4), yprima(i,1) + h*(A41*kp1 + A42*kp2 + A43*kp3 + A44*kp4)) - kp4];
     K = Newton_Raphson_Multivariable(F, [KP1;KP2;KP3;KP4], 10^-8);
+    
+    %TENER EN CUENTA COMO EL ALGORITMO DE NEWTON_RAPHSON TE DEVUELVE LAS
+    %VARIABLES
     KP1 = K(1,1);
     KP2 = K(2,1);
     KP3 = K(3,1);

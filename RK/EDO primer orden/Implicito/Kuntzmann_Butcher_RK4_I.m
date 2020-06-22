@@ -28,6 +28,9 @@ for i = 1:n-1
          f(x(i,1) + ((1/2)+W2P)*h, y(i,1) + (W1+W3P+W4)*h*k1 + (W1P+W5P)*h*k2 + (W1P)*h*k3 + (W1+W5P-W4)*h*k4) - k3 ;
          f(x(i,1) + ((1/2)+W2)*h, y(i,1) + (W1+W5)*h*k1 + (W1P+W3+W4P)*h*k2 + (W1P+W3-W4P)*h*k3 + (W1)*h*k4) - k4];
     K = Newton_Raphson_Multivariable(F, [K1;K2;K3;K4], 10^-8);
+    
+    %TENER EN CUENTA COMO EL ALGORITMO DE NEWTON_RAPHSON TE DEVUELVE LAS
+    %VARIABLES
     K1 = K(1,1);
     K2 = K(2,1);
     K3 = K(3,1);
