@@ -1,5 +1,5 @@
-function [x y xprima yprima] = RKN_implicito_orden_8(a,b,n,x0,y0,xprima0,yprima0)
-%EJEMPLO: [x y xprima yprima] = RKN_implicito_orden_8(0,2.5,200,0,1,0,0);
+function [t x y xprima yprima] = RKN_implicito_orden_8(a,b,n,x0,y0,xprima0,yprima0)
+%EJEMPLO: [t x y xprima yprima] = RKN_implicito_orden_8(0,2.5,200,0,1,0,0);
 
 syms kp1x kp2x kp3x kp4x kp1y kp2y kp3y kp4y;
 format long;
