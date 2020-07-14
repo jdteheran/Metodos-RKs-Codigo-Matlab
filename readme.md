@@ -35,7 +35,7 @@ Los métodos implementados que encontraras en este repositorio son los siguiente
 
 ## Jerarquía de carpetas y subcarpetas
 
-La jerarquía está organizada en primer lugar por el tipo de método, luego por el tipo de ejercicio y por último el tipo de presentación (explícito o implícito). Al ubicarse en el tipo de presentación ya se encuentra el código con una solución particular.
+La jerarquía está organizada en primer lugar por el tipo de método, luego por el tipo de ejercicio y por último el tipo de presentación (explícito o implícito). Al ubicarse en el tipo de presentación ya se encuentran con el código de una solución particular.
 
 <img src="https://iili.io/dFulbS.png" width="350">
 
