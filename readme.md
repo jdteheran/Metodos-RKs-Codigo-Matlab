@@ -69,3 +69,5 @@ Está implementación de cada metodo cuenta con la solución de un ejercicio en 
 **Nota:** Tener en cuenta los comentarios dentro del codigo fuente.
 
 ## Tesis
+
+https://www.docdroid.net/2XKpnIf/tesis-pdf
