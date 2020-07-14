@@ -43,8 +43,8 @@ Los tipos de ejercicios son:
 
  1. Ecuacion diferencial ordinario de primer orden
  2. Sistema de ecuaciones diferenciales ordinaria de primer orden
- 3. Ecuacion diferencial ordinaria de segundo orden $f(x,y)$
- 4. Sistema de ecuaciones diferenciales ordinaria de segundo orden $f(t,x,y)$ y $g(t,x,y)$
+ 3. Ecuacion diferencial ordinaria de segundo orden
+ 4. Sistema de ecuaciones diferenciales ordinaria de segundo orden
 
 ## Ejercicios resueltos
 
@@ -58,11 +58,11 @@ Está implementación de cada metodo cuenta con la solución de un ejercicio en 
 
 <img src="https://iili.io/dFua5l.png" width="600">
 
-- Ecuacion diferencial ordinaria de segundo orden $f(x,y)$
+- Ecuacion diferencial ordinaria de segundo orden
 
 <img src="https://iili.io/dFuR0G.png" width="200">
 
- - Sistema de ecuaciones diferenciales ordinaria de segundo orden $f(t,x,y)$ y $g(t,x,y)$
+ - Sistema de ecuaciones diferenciales ordinaria de segundo orden
 
 <img src="https://iili.io/dFuAfs.png" width="300">
 
