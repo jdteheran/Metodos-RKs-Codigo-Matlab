@@ -30,8 +30,8 @@ for i = 1:n-1
     yprima(i+1,1) = yprima(i,1) + h*((5179/57600)*K1 + (7571/16695)*K3 + (393/640)*K4 - (92097/339200)*K5 + (187/2100)*K6 + (1/40)*K7);
 end
 x(n,1) = a + n*h;
-%plot(x,y);
+plot(x,y);
 %plot(x,yprima);
-plot(y,yprima);
+%plot(y,yprima);
 grid;
 end

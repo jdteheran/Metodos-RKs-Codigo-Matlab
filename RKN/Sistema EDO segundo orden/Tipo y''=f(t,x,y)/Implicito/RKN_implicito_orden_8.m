@@ -73,8 +73,8 @@ for i = 1:n-1
     yprima(i+1,1) = yprima(i,1) + h*(B1*KP1Y + B2*KP2Y + B3*KP3Y + B4*KP4Y);
 end
 t(n,1) = a + n*h;
-%plot(t,x,t,y);
+plot(t,x,t,y);
 %plot(t,xprima,t,yprima);
-plot(x,xprima,y,yprima);
+%plot(x,xprima,y,yprima);
 grid;
 end

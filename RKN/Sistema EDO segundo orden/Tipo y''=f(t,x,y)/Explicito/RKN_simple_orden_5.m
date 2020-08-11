@@ -32,9 +32,10 @@ for i = 1:n-1
     y(i+1,1) = y(i,1) + h*yprima(i,1) + h^2*((14/336)*KY1 + (100/336)*KY2 + (54/336)*KY3);
     xprima(i+1,1) = xprima(i,1) + h*((14/336)*KX1 + (125/336)*KX2 + (162/336)*KX3 + (35/336)*KX4);
     yprima(i+1,1) = yprima(i,1) + h*((14/336)*KY1 + (125/336)*KY2 + (162/336)*KY3 + (35/336)*KY4);
+end
 t(n,1) = a + n*h;
-%plot(t,x,t,y);
+plot(t,x,t,y);
 %plot(t,xprima,t,yprima);
-plot(x,xprima,y,yprima);
+%plot(x,xprima,y,yprima);
 grid;
 end
