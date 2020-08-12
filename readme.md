@@ -1,6 +1,6 @@
 # Bienvenidos a métodos RK(s) y RKN(s) en MatLab!
 
-Este repositorio es el resultado de un trabajo de investigación para obtener el titulo de Magíster en Matemáticas. Aquí encontraras implementación de los métodos numéricos  **Runge-Kutta** y  **Runge-Kutta-Nystrom** tanto en su presentación explícita como implícita.
+Este repositorio es el resultado de un trabajo de investigación para obtener el titulo de Magíster en Matemáticas. Aquí encontraras implementación de los métodos numéricos  **Runge-Kutta** y  **Runge-Kutta-Nyström** tanto en su presentación explícita como implícita.
 
 ## Métodos implementados
 
@@ -17,19 +17,19 @@ Los métodos implementados que encontraras en este repositorio son los siguiente
 		- Gauss 2 etapas (RK 4to orden)
 		- Gauss 3 etapas (RK 6to orden)
 		- Kuntemann y Butcher (RK 8vo orden)
- 2. Métodos Runge-Kutta-Nystrom:
+ 2. Métodos Runge-Kutta-Nyström:
 	 - Explícitos:
 		 - RKN:
 			- Directo (RKN 3er orden)
 			- Transformado (RKN 3er orden)
-			- Nystrom (RKN 4to orden)
+			- Nyström (RKN 4to orden)
 		 - RKN simple:
-			 - Nystrom simple (RKN 4to orden)
-			 - Nystrom simple orden 5 (RKN 5to orden)
-			 - Nystrom especial orden 5 (RKN 5to orden)
+			 - Nyström simple (RKN 4to orden)
+			 - Nyström simple orden 5 (RKN 5to orden)
+			 - Nyström especial orden 5 (RKN 5to orden)
 			 - DOPRI5(4)7FM (RKN 7mo orden)
 	 - Implícito:
-		 - Runge-Kutta-Nystrom implícito 8vo orden
+		 - Runge-Kutta-Nyström implícito 8vo orden
 
 **Nota:** Estos métodos se encuentran repetidos debido a su jerarquía en el repositorio.
 
@@ -50,7 +50,7 @@ Los tipos de ejercicios son:
 
 Está implementación de cada método cuenta con la solución de un ejercicio en específico, pero el código es totalmente gratis y puede ser descargado para posteriormente ser modificado y usado con cualquier tipo de finalidad propia.
 
- - Ecuación diferencial ordinario de primer orden
+ - Ecuación diferencial ordinaria de primer orden
 
 <img src="https://iili.io/dFuYJ4.png" width="200">
 
