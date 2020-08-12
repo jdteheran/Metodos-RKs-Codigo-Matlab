@@ -70,4 +70,4 @@ Está implementación de cada método cuenta con la solución de un ejercicio en
 
 ## Tesis
 
-https://www.docdroid.net/2XKpnIf/tesis-pdf
+<a href='https://www.docdroid.net/GU2TiZh/tesis-pdf' target='_blank'>Tesis: construcción métodos Runge-Kutta-Nyström Implícito</a>
